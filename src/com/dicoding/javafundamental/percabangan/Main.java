@@ -47,8 +47,34 @@ public class Main {
         }
     }
 
+    public static void While(){
+        int value = 1;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Masukkan batas urutan angka");
+        int batasAtas = scanner.nextInt();
+        while (value <= batasAtas){
+            System.out.print("Angka: "+value);
+            value++;
+            System.out.print("\n");
+        }
+    }
+
+    public static void doWhile(){
+        int value = 1;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Masukkan batas urutan angka:");
+        int batasAtas = scanner.nextInt();
+        //lakukan dulu baru cek kondisi
+        do{
+            System.out.print("Angka: "+value);
+            value++;
+            System.out.print("\n");
+        } while(value <= batasAtas);
+    }
+
     public static void main(String[] args){
         //Main.SwitchWithoutBreak();
-        Main.forBersarang();
+        //Main.forBersarang();
+        Main.doWhile();
     }
 }
